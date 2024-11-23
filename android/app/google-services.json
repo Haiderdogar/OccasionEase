@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "595707762365",
+    "project_id": "occasionease-e51b1",
+    "storage_bucket": "occasionease-e51b1.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:595707762365:android:5d1b8da1558871728809d4",
+        "android_client_info": {
+          "package_name": "com.example.occ"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAX8Tdb9PAqwBEU9paAYzZqbwu3PQGbii0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
