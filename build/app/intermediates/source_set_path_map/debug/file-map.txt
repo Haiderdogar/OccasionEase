@@ -1,0 +1,12 @@
+com.example.occasion_ease.app-jetified-window-1.0.0-beta04-0 /Users/apple/.gradle/caches/transforms-3/2c4c230c0976ab96925a456aca1c3894/transformed/jetified-window-1.0.0-beta04/res
+com.example.occasion_ease.app-jetified-window-java-1.0.0-beta04-1 /Users/apple/.gradle/caches/transforms-3/93717ec511eddfed25a91a7f1c3fb89f/transformed/jetified-window-java-1.0.0-beta04/res
+com.example.occasion_ease.app-core-1.6.0-2 /Users/apple/.gradle/caches/transforms-3/f6f5e04330ecbd147af205838d9004d6/transformed/core-1.6.0/res
+com.example.occasion_ease.app-jetified-annotation-experimental-1.1.0-3 /Users/apple/.gradle/caches/transforms-3/fabe607cd74858a47d1da48c3735df29/transformed/jetified-annotation-experimental-1.1.0/res
+com.example.occasion_ease.app-debug-4 /Users/apple/Documents/GitHub/OccasionEase/android/app/src/debug/res
+com.example.occasion_ease.app-main-5 /Users/apple/Documents/GitHub/OccasionEase/android/app/src/main/res
+com.example.occasion_ease.app-pngs-6 /Users/apple/Documents/GitHub/OccasionEase/build/app/generated/res/pngs/debug
+com.example.occasion_ease.app-resValues-7 /Users/apple/Documents/GitHub/OccasionEase/build/app/generated/res/resValues/debug
+com.example.occasion_ease.app-rs-8 /Users/apple/Documents/GitHub/OccasionEase/build/app/generated/res/rs/debug
+com.example.occasion_ease.app-mergeDebugResources-9 /Users/apple/Documents/GitHub/OccasionEase/build/app/intermediates/incremental/debug/mergeDebugResources/merged.dir
+com.example.occasion_ease.app-mergeDebugResources-10 /Users/apple/Documents/GitHub/OccasionEase/build/app/intermediates/incremental/debug/mergeDebugResources/stripped.dir
+com.example.occasion_ease.app-merged_res-11 /Users/apple/Documents/GitHub/OccasionEase/build/app/intermediates/merged_res/debug
