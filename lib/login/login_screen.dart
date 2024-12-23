@@ -16,7 +16,8 @@ class LoginScreen extends ConsumerWidget {
     return Scaffold(
       body: SafeArea(
         child: Padding(
-          padding: const EdgeInsets.all(24.0),
+          padding:
+              const EdgeInsets.only(left: 24, right: 24, bottom: 24, top: 80),
           child: SingleChildScrollView(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -67,25 +68,6 @@ class LoginScreen extends ConsumerWidget {
                   ),
                 ),
                 const SizedBox(height: 16),
-                Row(
-                  children: [
-                    Checkbox(
-                      value: rememberMe,
-                      onChanged: (value) {
-                        ref.read(rememberMeProvider.notifier).state =
-                            value ?? false;
-                      },
-                    ),
-                    const Text('Remember Me'),
-                    const Spacer(),
-                    TextButton(
-                      onPressed: () {
-                        // Handle forgot password
-                      },
-                      child: const Text('Forgot password?'),
-                    ),
-                  ],
-                ),
                 if (errorMessage != null)
                   Padding(
                     padding: const EdgeInsets.only(top: 8.0),
@@ -100,7 +82,7 @@ class LoginScreen extends ConsumerWidget {
                       ? null
                       : () => ref
                           .read(authControllerProvider)
-                          .signInWithEmailAndPassword(),
+                          .signInWithEmailAndPassword(context: context),
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.blue,
                     padding: const EdgeInsets.symmetric(vertical: 16),
@@ -118,44 +100,6 @@ class LoginScreen extends ConsumerWidget {
                           ),
                         ),
                 ),
-                const SizedBox(height: 16),
-                OutlinedButton(
-                  onPressed: () {
-                    // Handle create account
-                  },
-                  style: OutlinedButton.styleFrom(
-                    padding: const EdgeInsets.symmetric(vertical: 16),
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(12),
-                    ),
-                  ),
-                  child: const Text('Create Account'),
-                ),
-                const SizedBox(height: 24),
-                // const Center(
-                //   child: Text(
-                //     'Or Sign in with social media',
-                //     style: TextStyle(color: Colors.grey),
-                //   ),
-                // ),
-                // const SizedBox(height: 16),
-                // Row(
-                //   mainAxisAlignment: MainAxisAlignment.center,
-                //   children: [
-                //     IconButton(
-                //       icon: Image.asset('assets/google_icon.png'),
-                //       onPressed: () {
-                //         // Handle Google sign in
-                //       },
-                //     ),
-                //     IconButton(
-                //       icon: Image.asset('assets/facebook_icon.png'),
-                //       onPressed: () {
-                //         // Handle Facebook sign in
-                //       },
-                //     ),
-                //   ],
-                // ),
               ],
             ),
           ),

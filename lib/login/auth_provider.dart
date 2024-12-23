@@ -1,4 +1,6 @@
+import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:occasion_ease/home/home_screen.dart';
 import 'package:occasion_ease/login/auth_repository.dart';
 
 final emailProvider = StateProvider<String>((ref) => '');
@@ -17,10 +19,9 @@ final authControllerProvider = Provider((ref) {
 
 class AuthController {
   final Ref _ref;
-
   AuthController(this._ref);
-
-  Future<void> signInWithEmailAndPassword() async {
+  Future<void> signInWithEmailAndPassword(
+      {required BuildContext context}) async {
     final email = _ref.read(emailProvider);
     final password = _ref.read(passwordProvider);
 
@@ -38,7 +39,11 @@ class AuthController {
             email: email,
             password: password,
           );
-
+      Navigator.pushAndRemoveUntil(
+        context,
+        MaterialPageRoute(builder: (context) => const HomeScreen()),
+        (route) => false, // This ensures all previous routes are removed
+      );
       _ref.read(errorMessageProvider.notifier).state = null;
     } catch (e) {
       _ref.read(errorMessageProvider.notifier).state = e.toString();
