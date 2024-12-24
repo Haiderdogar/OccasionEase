@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:occasion_ease/data_upload/data_upload_screen.dart';
 import 'package:occasion_ease/login/login_screen.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -83,7 +84,7 @@ class HomeScreen extends StatelessWidget {
     Navigator.push(
       context,
       MaterialPageRoute(
-        builder: (context) => HomeScreen(),
+        builder: (context) => const DataUploadScreen(),
       ),
     );
   }
@@ -116,6 +117,7 @@ class HomeScreen extends StatelessWidget {
 
   void _logout(BuildContext context) async {
     await FirebaseAuth.instance.signOut();
+    // ignore: use_build_context_synchronously
     Navigator.of(context).pushAndRemoveUntil(
       MaterialPageRoute(builder: (context) => const LoginScreen()),
       (Route<dynamic> route) => false,

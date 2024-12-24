@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.occasion_ease.app-mergeDebugResources-18:/values-en-rXC/values-en-rXC.xml",
+            "outputFile": "com.example.occasion_ease.app-mergeDebugResources-29:/values-en-rXC/values-en-rXC.xml",
             "map": [
                 {
                     "source": "/Users/apple/.gradle/caches/transforms-4/21c3485bf1ef7934fdd5e9b598660726/transformed/browser-1.4.0/res/values-en-rXC/values-en-rXC.xml",
@@ -13,11 +13,11 @@
                         "endOffsets": "250,449,660,862"
                     },
                     "to": {
-                        "startLines": "4,5,6,7",
+                        "startLines": "11,12,13,14",
                         "startColumns": "4,4,4,4",
-                        "startOffsets": "486,686,885,1096",
+                        "startOffsets": "1913,2113,2312,2523",
                         "endColumns": "199,198,210,201",
-                        "endOffsets": "681,880,1091,1293"
+                        "endOffsets": "2108,2307,2518,2720"
                     }
                 },
                 {
@@ -31,20 +31,20 @@
                     }
                 },
                 {
-                    "source": "/Users/apple/.gradle/caches/transforms-4/adbaad38d2f53ae87055b32183b015f2/transformed/core-1.6.0/res/values-en-rXC/values-en-rXC.xml",
+                    "source": "/Users/apple/.gradle/caches/transforms-4/961b96812fe8d58eb99ab5180289f770/transformed/core-1.13.1/res/values-en-rXC/values-en-rXC.xml",
                     "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "203",
-                        "endOffsets": "254"
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,251,456,657,858,1065,1270,1482",
+                        "endColumns": "195,204,200,200,206,204,211,203",
+                        "endOffsets": "246,451,652,853,1060,1265,1477,1681"
                     },
                     "to": {
-                        "startLines": "8",
-                        "startColumns": "4",
-                        "startOffsets": "1298",
-                        "endColumns": "203",
-                        "endOffsets": "1497"
+                        "startLines": "4,5,6,7,8,9,10,15",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "486,682,887,1088,1289,1496,1701,2725",
+                        "endColumns": "195,204,200,200,206,204,211,203",
+                        "endOffsets": "677,882,1083,1284,1491,1696,1908,2924"
                     }
                 }
             ]

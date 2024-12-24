@@ -7,9 +7,6 @@ class LoginScreen extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final email = ref.watch(emailProvider);
-    final password = ref.watch(passwordProvider);
-    final rememberMe = ref.watch(rememberMeProvider);
     final isLoading = ref.watch(isLoadingProvider);
     final errorMessage = ref.watch(errorMessageProvider);
 
@@ -24,7 +21,7 @@ class LoginScreen extends ConsumerWidget {
               children: [
                 const SizedBox(height: 40),
                 const Text(
-                  'Welcome Back',
+                  'Occasion Ease',
                   style: TextStyle(
                     fontSize: 32,
                     fontWeight: FontWeight.bold,
